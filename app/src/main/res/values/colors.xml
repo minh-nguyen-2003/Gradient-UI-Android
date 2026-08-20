@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+
+    <!-- Nền demo: gần đen, hơi ngả tím — gradient nổi nhất trên nền tối -->
+    <color name="backdrop_start">#171021</color>
+    <color name="backdrop_end">#08060C</color>
+
+    <color name="brand_orange">#D66341</color>
+    <color name="brand_pink">#B7528D</color>
+    <color name="brand_violet">#9139F6</color>
+    <color name="brand_violet_soft">#B066E3</color>
+
+    <!-- Nút CTA: nền gradient đặc, viền cùng tông sáng hơn -->
+    <array name="cta_fill">
+        <item>@color/brand_orange</item>
+        <item>@color/brand_pink</item>
+        <item>@color/brand_violet</item>
+    </array>
+    <array name="cta_stroke">
+        <item>@color/white_50</item>
+        <item>@color/white_70</item>
+    </array>
+
+    <!-- Thẻ kính: viền trắng nhạt dần, nền trắng rất mờ -->
+    <array name="card_stroke">
+        <item>#66FFFFFF</item>
+        <item>#14FFFFFF</item>
+    </array>
+    <array name="card_fill">
+        <item>#1AFFFFFF</item>
+        <item>#05FFFFFF</item>
+    </array>
+
+    <!-- Item được chọn / thường / tắt -->
+    <array name="item_selected_stroke">
+        <item>@color/brand_violet_soft</item>
+        <item>#FF9D8680</item>
+    </array>
+    <array name="item_selected_fill">
+        <item>#33B066E3</item>
+        <item>#0DB066E3</item>
+    </array>
+    <array name="item_idle_stroke">
+        <item>#33FFFFFF</item>
+    </array>
+    <array name="item_disabled_stroke">
+        <item>#14FFFFFF</item>
+    </array>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Nền tối trơn để gradient của AuroraView nổi rõ. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="270"
+        android:endColor="@color/backdrop_end"
+        android:startColor="@color/backdrop_start"
+        android:type="linear" />
+</shape>

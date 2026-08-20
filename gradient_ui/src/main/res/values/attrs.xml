@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Container viền gradient + nền gradient tuỳ chọn — xem AuroraView -->
+    <declare-styleable name="AuroraView">
+        <attr name="aurora_strokeWidth" format="dimension" />
+        <attr name="aurora_cornerRadius" format="dimension" />
+        <!-- true: bán kính = nửa cạnh ngắn ⇒ view vuông ra hình tròn, view ngang ra pill -->
+        <attr name="aurora_pill" format="boolean" />
+        <!-- Trỏ tới một <array> gồm các @color; mảng 1 màu ⇒ đơn sắc -->
+        <attr name="aurora_strokeColors" format="reference" />
+        <attr name="aurora_fillColors" format="reference" />
+        <attr name="aurora_clipContent" format="boolean" />
+        <!-- Giá trị enum phải khớp hằng số trong AuroraOrientation -->
+        <attr name="aurora_orientation">
+            <enum name="left_right" value="0" />
+            <enum name="top_bottom" value="1" />
+            <enum name="top_left_bottom_right" value="2" />
+            <enum name="top_right_bottom_left" value="3" />
+        </attr>
+        <attr name="aurora_strokeOrientation">
+            <enum name="left_right" value="0" />
+            <enum name="top_bottom" value="1" />
+            <enum name="top_left_bottom_right" value="2" />
+            <enum name="top_right_bottom_left" value="3" />
+        </attr>
+        <attr name="aurora_fillOrientation">
+            <enum name="left_right" value="0" />
+            <enum name="top_bottom" value="1" />
+            <enum name="top_left_bottom_right" value="2" />
+            <enum name="top_right_bottom_left" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>

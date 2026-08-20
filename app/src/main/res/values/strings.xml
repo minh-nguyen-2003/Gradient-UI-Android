@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Gradient UI</string>
+
+    <string name="demo_title">Aurora</string>
+    <string name="demo_subtitle">Viền gradient bo góc, không cần drawable</string>
+
+    <string name="section_pill">aurora_pill — nút tròn, viền gradient mặc định</string>
+    <string name="section_cta">aurora_fillColors — nền gradient đặc</string>
+    <string name="section_card">aurora_cornerRadius + aurora_clipContent</string>
+    <string name="section_states">Một view, 3 trạng thái — đổi mảng màu lúc chạy</string>
+    <string name="section_playground">Đổi bằng code lúc chạy</string>
+
+    <string name="cta_label">Nâng cấp Premium</string>
+    <string name="card_title">Aurora Card</string>
+    <string name="card_desc">Viền và nền là 2 lớp gradient tách rời, mỗi lớp set hướng riêng được — nên không phải đẻ ra một file drawable cho mỗi tổ hợp màu.</string>
+
+    <string name="item_selected">Đang chọn</string>
+    <string name="item_idle">Bình thường (viền 1 màu)</string>
+    <string name="item_disabled">Tạm khoá</string>
+
+    <string name="label_stroke">strokeWidth: %1$d dp</string>
+    <string name="btn_orientation">Hướng gradient: %s</string>
+</resources>

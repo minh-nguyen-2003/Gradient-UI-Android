@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App khai lại 2 dimen này với cùng tên để đổi mặc định toàn cục — ví dụ trỏ sang sdp
+         (`@dimen/_12sdp`) nếu dự án đang dùng thư viện scalable dp. -->
+
+    <dimen name="aurora_stroke_width">1dp</dimen>
+    <dimen name="aurora_corner_radius">12dp</dimen>
+</resources>

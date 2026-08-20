@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App khai lại resource CÙNG TÊN là ghi đè được mặc định của library. -->
+
+    <!-- Bảng màu viền mặc định: cam → hồng → tím -->
+    <color name="aurora_stroke_start">#D66341</color>
+    <color name="aurora_stroke_center">#B7528D</color>
+    <color name="aurora_stroke_end">#9139F6</color>
+
+    <array name="aurora_default_stroke">
+        <item>@color/aurora_stroke_start</item>
+        <item>@color/aurora_stroke_center</item>
+        <item>@color/aurora_stroke_end</item>
+    </array>
+</resources>
