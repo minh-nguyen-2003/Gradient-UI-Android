@@ -45,13 +45,13 @@ Thêm dependency vào `build.gradle` (module):
 
 ```
 	dependencies {
-	        implementation("com.github.minh-nguyen-2003.Gradient-UI-Android:gradient-ui:1.0.0")
+	        implementation("com.github.minh-nguyen-2003:Gradient-UI-Android:1.0.0")
 	}
 ```
 
-Thay `1.0.0` bằng tag release. Coordinate chính xác thì xem log build trên trang JitPack của
-repo — module publish với `artifactId = gradient-ui`, còn `groupId`/`version` lấy theo tham số
-JitPack truyền vào nên tự khớp với tag, không phải sửa tay trong `build.gradle.kts`.
+Thay `1.0.0` bằng tag release muốn dùng. JitPack build với `-Pgroup=com.github.minh-nguyen-2003`
+và gộp module library thành một artifact trùng tên repo, nên coordinate luôn có dạng
+`com.github.minh-nguyen-2003:Gradient-UI-Android:<tag>`.
 
 ## Cách sử dụng cơ bản
 
