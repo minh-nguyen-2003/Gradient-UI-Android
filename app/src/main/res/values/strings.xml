@@ -2,22 +2,34 @@
     <string name="app_name">Gradient UI</string>
 
     <string name="demo_title">Aurora</string>
-    <string name="demo_subtitle">Viền gradient bo góc, không cần drawable</string>
+    <string name="demo_subtitle">Viền gradient, ruột xuyên thấu — drawable không làm được</string>
 
+    <string name="section_hero">Viền gradient chạy 1 hướng, nền chạy hướng khác, ruột nhìn xuyên qua ảnh</string>
+    <string name="section_why">Vì sao không dùng &lt;shape&gt;&lt;stroke&gt;: stroke của drawable chỉ nhận MỘT màu. Muốn viền gradient bằng drawable phải chồng 2 shape, và shape phía trong buộc phải ĐẶC để che lớp gradient — thế là mất xuyên thấu. AuroraView vẽ viền bằng shader nên ruột vẫn trong suốt.</string>
     <string name="section_pill">aurora_pill — nút tròn, viền gradient mặc định</string>
     <string name="section_cta">aurora_fillColors — nền gradient đặc</string>
     <string name="section_card">aurora_cornerRadius + aurora_clipContent</string>
     <string name="section_states">Một view, 3 trạng thái — đổi mảng màu lúc chạy</string>
-    <string name="section_playground">Đổi bằng code lúc chạy</string>
+
+    <string name="hero_fill_none">Ruột: XUYÊN THẤU (không set fillColors)</string>
+    <string name="hero_fill_translucent">Ruột: nền gradient mờ 50%</string>
+    <string name="hero_fill_solid">Ruột: nền gradient đặc</string>
+    <!-- %1$s = tên hướng, %2$s = mũi tên minh hoạ hướng đó -->
+    <string name="hero_stroke">Viền %2$s %1$s</string>
+    <string name="hero_fill_dir">Nền %2$s %1$s</string>
+    <string name="hero_fill_dir_none">Nền — không có</string>
+
+    <string name="btn_fill_mode">Bật / tắt ruột</string>
+    <string name="btn_stroke">Đổi hướng viền</string>
+    <string name="btn_fill">Đổi hướng nền</string>
+    <string name="label_stroke">aurora_strokeWidth: %1$d dp</string>
 
     <string name="cta_label">Nâng cấp Premium</string>
     <string name="card_title">Aurora Card</string>
-    <string name="card_desc">Viền và nền là 2 lớp gradient tách rời, mỗi lớp set hướng riêng được — nên không phải đẻ ra một file drawable cho mỗi tổ hợp màu.</string>
+    <string name="card_desc">Viền và nền set hướng riêng được, nên không phải đẻ ra một file drawable cho mỗi tổ hợp màu.</string>
+    <string name="card_nested">Aurora lồng trong Aurora</string>
 
     <string name="item_selected">Đang chọn</string>
-    <string name="item_idle">Bình thường (viền 1 màu)</string>
+    <string name="item_idle">Bình thường (viền 1 màu) — bấm thử</string>
     <string name="item_disabled">Tạm khoá</string>
-
-    <string name="label_stroke">strokeWidth: %1$d dp</string>
-    <string name="btn_orientation">Hướng gradient: %s</string>
 </resources>

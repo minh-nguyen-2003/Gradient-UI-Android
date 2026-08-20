@@ -6,6 +6,24 @@ không phải đẻ ra một file drawable cho mỗi tổ hợp màu / mỗi tr�
 
 Library id: `vn.minh_nguyen.vkey.gradient.ui`
 
+## Vì sao không làm bằng drawable
+
+`<shape><stroke>` **chỉ nhận một màu**. Muốn viền gradient bằng drawable thì phải chồng 2 shape:
+một shape gradient phủ kín, rồi một shape nữa đè lên che phần ruột — mà shape che đó buộc phải
+**ĐẶC**. Kết quả: viền gradient thì được, nhưng ruột mất trong suốt, đặt lên ảnh là lộ ngay.
+
+`AuroraView` vẽ viền bằng `Paint` + shader nên **ruột vẫn trong suốt** — đây mới là thứ drawable
+không làm được.
+
+<p align="center">
+  <img src="demo_see_through.png" width="45%" style="margin-right:10px;" />
+  <img src="demo_solid_fill.png" width="45%" />
+</p>
+
+Trái: **không set `aurora_fillColors`** ⇒ các mảng màu của ảnh nền chạy liên tục xuyên qua ruột,
+chỉ có viền gradient nằm trên. Phải: set `aurora_fillColors` ⇒ ruột bị nền che, và nền chạy
+`left_right` trong khi viền vẫn chạy `top_bottom` — 2 lớp hoàn toàn độc lập.
+
 ---
 
 ## Cài đặt (qua JitPack)

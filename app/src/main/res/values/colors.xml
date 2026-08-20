@@ -8,10 +8,23 @@
     <color name="backdrop_start">#171021</color>
     <color name="backdrop_end">#08060C</color>
 
-    <color name="brand_orange">#D66341</color>
-    <color name="brand_pink">#B7528D</color>
-    <color name="brand_violet">#9139F6</color>
+    <color name="brand_orange">#7FD66341</color>
+    <color name="brand_pink">#7FB7528D</color>
+    <color name="brand_violet">#7F9139F6</color>
     <color name="brand_violet_soft">#B066E3</color>
+
+    <!-- Khối demo chính: nền tông ẤM, viền tông LẠNH và dày 4dp — 2 gradient tương phản
+         hẳn nhau thì mới thấy rõ chúng chạy 2 hướng khác nhau. -->
+    <array name="hero_fill">
+        <item>@color/brand_orange</item>
+        <item>@color/brand_pink</item>
+        <item>@color/brand_violet</item>
+    </array>
+    <array name="hero_stroke">
+        <item>#7CF6A0</item>
+        <item>#35D6E8</item>
+        <item>#4C6FFF</item>
+    </array>
 
     <!-- Nút CTA: nền gradient đặc, viền cùng tông sáng hơn -->
     <array name="cta_fill">
@@ -20,8 +33,8 @@
         <item>@color/brand_violet</item>
     </array>
     <array name="cta_stroke">
-        <item>@color/white_50</item>
-        <item>@color/white_70</item>
+        <item>#00FFFFFF</item>
+        <item>@color/white</item>
     </array>
 
     <!-- Thẻ kính: viền trắng nhạt dần, nền trắng rất mờ -->
@@ -48,5 +61,18 @@
     </array>
     <array name="item_disabled_stroke">
         <item>#14FFFFFF</item>
+    </array>
+
+    <!-- 2 trạng thái nền của khối demo. Khai alpha thẳng ở đây (không qua brand_*) để 3 mức
+         xuyên thấu / mờ / đặc luôn khác nhau rõ, kể cả khi brand_* được chỉnh. -->
+    <array name="hero_fill_soft">
+        <item>#66D66341</item>
+        <item>#66B7528D</item>
+        <item>#669139F6</item>
+    </array>
+    <array name="hero_fill_solid">
+        <item>#FFD66341</item>
+        <item>#FFB7528D</item>
+        <item>#FF9139F6</item>
     </array>
 </resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- "Ảnh nền" giả: nhiều màu, rối mắt có chủ đích. Đặt AuroraView (không set fillColors) đè
+     lên đây thì nhìn xuyên qua ruột thấy hết các mảng màu này — đó là thứ drawable
+     <shape><stroke> không làm được, vì stroke của shape chỉ nhận màu ĐƠN, muốn viền gradient
+     phải chồng 2 shape và shape phía trong buộc phải ĐẶC (che mất nền). -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="315"
+                android:endColor="#0E7490"
+                android:startColor="#DB2777"
+                android:type="linear" />
+        </shape>
+    </item>
+    <item
+        android:width="220dp"
+        android:height="220dp"
+        android:gravity="top|start"
+        android:left="-40dp"
+        android:top="-60dp">
+        <shape android:shape="oval">
+            <gradient
+                android:endColor="#00FBBF24"
+                android:gradientRadius="110dp"
+                android:startColor="#FFFBBF24"
+                android:type="radial" />
+        </shape>
+    </item>
+    <item
+        android:width="200dp"
+        android:height="200dp"
+        android:gravity="center"
+        android:left="60dp">
+        <shape android:shape="oval">
+            <gradient
+                android:endColor="#0022D3EE"
+                android:gradientRadius="100dp"
+                android:startColor="#FF22D3EE"
+                android:type="radial" />
+        </shape>
+    </item>
+    <item
+        android:width="240dp"
+        android:height="240dp"
+        android:gravity="bottom|end"
+        android:bottom="-70dp"
+        android:right="-50dp">
+        <shape android:shape="oval">
+            <gradient
+                android:endColor="#004ADE80"
+                android:gradientRadius="120dp"
+                android:startColor="#FF4ADE80"
+                android:type="radial" />
+        </shape>
+    </item>
+    <item
+        android:width="160dp"
+        android:height="160dp"
+        android:gravity="bottom|start"
+        android:bottom="-40dp"
+        android:left="40dp">
+        <shape android:shape="oval">
+            <gradient
+                android:endColor="#00F97316"
+                android:gradientRadius="80dp"
+                android:startColor="#FFF97316"
+                android:type="radial" />
+        </shape>
+    </item>
+</layer-list>
